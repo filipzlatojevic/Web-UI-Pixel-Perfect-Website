@@ -1,0 +1,268 @@
+section.four {
+    height: 641.69px;
+    background-color: $brick;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    div.text-wraper {
+        gap: 30px;
+        width: 600px;
+        padding: 0px 40px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        div.line {
+            background: $silver;
+        }
+
+        h2 {
+            font-weight: 400;
+            font-size: 46px;
+            line-height: 58px;
+            color: white;
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 28px;
+            color: white;
+        }
+
+        button {
+            background-color: white;
+            color: $red;
+            border: none;
+        }
+    }
+
+    div.card-wraper-out {
+        background: #FFFFFF;
+        box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.35);
+        width: 600px;
+        height: 501.69px;
+        overflow: auto;
+
+        div.card-wraper-in {
+            width: 100%;
+            height: 100%;
+            padding: 30px;
+
+            .quote-wraper {
+                display: flex;
+                align-items: flex-start;
+                gap: 14px;
+                flex-direction: column;
+
+                img {
+                    margin-right: 4px;
+                    width: 37.38px;
+                    height: 49.35px;
+                }
+
+                .open-quote {
+                    width: 100%;
+                    height: 49.35px;
+                }
+
+                p {
+                    font-weight: 500;
+                    font-size: 28px;
+                    line-height: 42px;
+                    color: $charcoal;
+                }
+
+                .close-quote {
+                    width: 100%;
+                    height: 49.35px;
+                    transform: rotate(180deg);
+                }
+            }
+
+            .picture-wraper {
+                display: flex;
+                padding: 20px 0px 0px;
+                gap: 20px;
+                max-width: 353px;
+                width: 100%;
+                height: 107px;
+                align-items: center;
+
+                img {
+                    border-radius: 50%;
+                    width: 87px;
+                    height: 87px;
+                }
+
+                p {
+                    max-width: 246px;
+                    width: 100%;
+                    height: 56px;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 169.2%;
+                    letter-spacing: 0.02em;
+                    color: black;
+                }
+            }
+
+            .pag-wraper {
+                width: 100%;
+                height: 80px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 20px 0px 0px;
+                gap: 13px;
+
+                .arrow-back,
+                .arrow-forward {
+                    padding: 9.5px;
+                    cursor: pointer;
+                }
+
+                .dot {
+                    opacity: 50%;
+                    width: 13px;
+                    height: 13px;
+                }
+
+                .big {
+                    width: 19px;
+                    height: 19px;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    section.four {
+        flex-wrap: wrap;
+        min-height: 863.69px;
+        height: 100%;
+        gap: 40px;
+        padding: 40px 20px;
+
+        div.text-wraper {
+            gap: 20px;
+            width: 100%;
+            padding: 0px;
+
+            h2 {
+                font-size: 40px;
+                line-height: 50px;
+            }
+        }
+
+        div.card-wraper-out {
+            width: 100%;
+            overflow: auto;
+
+            div.card-wraper-in {
+                padding: 40px 50px;
+
+                .quote-wraper {
+                    gap: 15px;
+
+                    p {
+                        font-size: 26px;
+                        line-height: 40px;
+                    }
+                }
+
+                .pag-wraper {
+                    max-width: 540px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: flex-end;
+
+                    .dot {
+                        align-self: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    section.four {
+        div.text-wraper {
+            padding: 0px;
+
+            h2 {
+                font-size: 30px;
+                line-height: 38px;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 26px;
+            }
+
+            button {
+                width: auto;
+            }
+        }
+
+        div.card-wraper-out {
+            div.card-wraper-in {
+                padding: 30px;
+
+                .quote-wraper {
+                    gap: 10px;
+
+                    p {
+                        font-size: 20px;
+                        line-height: 30px;
+                    }
+                }
+
+                .picture-wraper {
+                    padding: 16px 0px 0px;
+                    gap: 20px;
+                    max-width: 353px;
+                    width: 100%;
+                    max-height: 96px;
+                    height: 100%;
+
+                    img {
+                        width: 80px;
+                        height: 80px;
+                    }
+
+                    p {
+                        font-size: 16px;
+                        line-height: 20px;
+                    }
+                }
+
+                .pag-wraper {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: flex-end;
+
+                    .arrow-back,
+                    .arrow-forward {
+                        width: 40px;
+                        height: 40px;
+                        align-self: center;
+                        padding: 5px;
+                    }
+
+                    .dot {
+                        align-self: center;
+                    }
+                }
+            }
+        }
+    }
+}

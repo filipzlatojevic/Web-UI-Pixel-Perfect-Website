@@ -1,0 +1,128 @@
+section.five {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 0;
+    gap: 30px;
+    width: 100%;
+
+    .line {
+        background-color: $charcoal;
+    }
+
+    h2 {
+        font-weight: 400;
+        font-size: 46px;
+        line-height: 58px;
+        text-align: center;
+        color: #000000;
+        max-width: 1200px;
+        width: 100%;
+        display: block;
+        height: 58px;
+        white-space: nowrap;
+    }
+
+    ul.menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        max-width: 700px;
+        width: 100%;
+        border-bottom: 2px solid $silver;
+
+        li {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            position: relative;
+            border-top: 2px solid $silver;
+            cursor: pointer;
+
+            a {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 32px;
+                color: black;
+                margin: 10px 20px;
+            }
+
+            img {
+                padding: 5px;
+                margin: 10px 20px;
+            }
+
+            ul.text {
+                display: none;
+                background-color: $silver-light;
+                position: relative;
+                left: 0px;
+                top: 0px;
+                border-top: 2px solid $silver;
+
+                li {
+                    width: 100%;
+                    padding: 20px;
+                    border: none;
+
+                    p {
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 160.2%;
+                        letter-spacing: 0.02em;
+                        color: $charcoal;
+                    }
+
+                    p:first-child {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    section.five {
+        padding: 40px 20px;
+        gap: 20px;
+
+        h2 {
+            font-size: 40px;
+            line-height: 50px;
+            width: 100%;
+            height: 50px;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        ul.menu {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    section.five {
+        h2 {
+            font-size: 30px;
+            line-height: 38px;
+            height: 38px;
+        }
+
+        ul.menu {
+            width: 100%;
+
+            li {
+                a {
+                    font-size: 18px;
+                    line-height: 32px;
+                }
+            }
+        }
+    }
+}

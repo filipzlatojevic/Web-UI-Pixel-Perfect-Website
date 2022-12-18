@@ -1,0 +1,110 @@
+footer {
+    margin-top: auto;
+    width: 100%;
+
+    .footer-content {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 15px 20px;
+
+        img {
+            width: 180px;
+            height: 53.95px;
+            display: inline-block;
+        }
+
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        ul.footer-list {
+            max-width: 88px;
+            width: 100%;
+            min-height: 24px;
+            height: 100%;
+
+            img {
+                width: 19px;
+                height: 24px;
+            }
+
+            li:nth-child(3) img {
+                width: 10px;
+            }
+        }
+
+        ul.footer-nav {
+            width: 252px;
+            min-height: 16px;
+            height: 100%;
+
+            li {
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 18px;
+                text-align: right;
+                color: $charcoal;
+            }
+        }
+    }
+
+    div.info {
+        width: 100%;
+        min-height: 45px;
+        height: 100%;
+        background-color: $brick;
+        padding: 15px 30px;
+        display: flex;
+        justify-content: center;
+
+        p {
+            max-width: 515px;
+            width: 100%;
+            min-height: 15px;
+            height: 100%;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 15px;
+            color: white;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        height: auto;
+
+        .footer-content {
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            ul.footer-nav {
+                width: 100%;
+                justify-content: flex-end;
+                gap: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    footer {
+        .footer-content {
+            padding: 20px;
+            gap: 20px;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+
+            ul.footer-nav {
+                justify-content: space-around;
+            }
+        }
+    }
+}

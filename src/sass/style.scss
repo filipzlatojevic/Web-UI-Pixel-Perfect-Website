@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import './variables';
+@import './reset';
+@import './header/header';
+@import './section-one/one';
+@import './section-two/two';
+@import './section-three/three';
+@import './section-four/four';
+@import './section-five/five';
+@import './section-six/six';
+@import './footer/footer';
+
+
+@mixin flex($direction, $position) {
+  display: flex;
+  padding: 0 40px 0 10px;
+  justify-content: $position;
+  flex-direction: $direction;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}

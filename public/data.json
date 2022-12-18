@@ -1,0 +1,19 @@
+{
+    "people": [
+        {
+            "name": "Orci varius natoque <br>Magnis dis parturient montes",
+            "quote": "Sed dignissim placerat dolor id maxim. Nullam gravida bibendum ipsum, a consequat neque venenatis et.",
+            "image": "assets/Images/woman.jpg"
+        },
+        {
+            "name": "Praesent Tempus <br>Nunc faucibus eget",
+            "quote": "Vivamus venenatis ipsum at risus placerat, sit amet dapibus diam aliquam posuere cubilia curae.",
+            "image": "assets/Images/chi.jpg"
+        },
+        {
+            "name": "Cras malesuada <br>Sed pulvinar ac lorem",
+            "quote": "Etiam mollis sit amet tellus ut accumsan. Donec sit amet lectus scelerisque, bibendum purus id, tristique felis.",
+            "image": "assets/Images/man.jpg"
+        }
+    ]
+}

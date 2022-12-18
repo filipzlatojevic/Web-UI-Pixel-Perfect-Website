@@ -1,0 +1,46 @@
+ul.drop {
+    display: none;
+    position: absolute;
+    background-color: $silver-light;
+    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.15);
+    border-radius: .1875rem;
+    width: 11.875rem;
+    gap: 10px;
+    padding: 0.625rem;
+    top: 2.5em;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 2s ease;
+
+    li {
+        font-size: 0.875em;
+        font-weight: 500;
+        line-height: 1.125rem;
+    }
+
+    li:first-child a:after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -85%;
+        border-left: 0.4375rem solid transparent;
+        border-right: 0.4375rem solid transparent;
+        border-bottom: 0.625rem solid $silver-light;
+    }
+}
+
+li.active {
+    img {
+        transform: rotate(-180deg);
+    }
+}
+
+li.show {
+    ul {
+        display: flex !important;
+    }
+}

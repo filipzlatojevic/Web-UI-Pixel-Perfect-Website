@@ -1,0 +1,153 @@
+section.three {
+    height: 725px;
+    width: 100%;
+    background-color: rgb(62, 163, 151, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px 230px;
+
+    div.line {
+        background-color: $charcoal;
+    }
+
+    h3 {
+        font-weight: 400;
+        font-size: 46px;
+        line-height: 58px;
+    }
+
+    div.wraper {
+        display: flex;
+        padding: 50px 0px;
+        gap: 10px;
+        width: 100%;
+        overflow: auto;
+
+        div.percentage-wraper {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+
+            p {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 25px;
+                text-align: center;
+                letter-spacing: 0.04em;
+                color: black;
+            }
+
+            h2 {
+                font-weight: 400;
+                font-size: 100px;
+                line-height: 100px;
+                display: inline-block;
+                margin-right: 1px;
+            }
+
+            span {
+                font-weight: 400;
+                font-size: 60px;
+                line-height: 70px;
+            }
+
+            p:nth-child(3) {
+                line-height: 28px;
+                width: 142px;
+            }
+        }
+    }
+
+    div.button-wraper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 440px;
+        width: 100%;
+        gap: 30px;
+
+        p {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 28px;
+            color: $charcoal;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 1090px) {
+    section.three {
+        padding: 70px 0px;
+    }
+}
+
+@media (max-width: 768px) {
+    section.three {
+        padding: 40px 20px;
+        gap: 20px;
+        overflow: auto;
+        min-height: 570px;
+        height: 100%;
+
+        div.wraper {
+            padding: 40px 0px;
+
+            div.percentage-wraper {
+                gap: 1px;
+
+                p {
+                    font-size: 18px;
+                    line-height: 22px;
+                    letter-spacing: 0.04em;
+                }
+
+                h2 {
+                    font-size: 70px;
+                    line-height: 70px;
+                }
+
+                span {
+                    font-size: 40px;
+                    line-height: 50px;
+                }
+
+                p:nth-child(3) {
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+
+    div.button-wraper {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 375px) {
+    section.three {
+        div.wraper {
+            padding: 0px;
+            flex-direction: column;
+
+            div.percentage-wraper {
+                gap: 1px;
+
+                h2 {
+                    font-size: 60px;
+                    line-height: 60px;
+                }
+
+                span {
+                    line-height: 45px;
+                }
+            }
+        }
+    }
+}
